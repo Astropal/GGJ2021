@@ -7,18 +7,6 @@ public class Player : MonoBehaviour
     public DragTarget dragTarget;
     public Rigidbody2D velocity;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D Col)
     {
         if(Col.gameObject.tag == "Star")
@@ -27,8 +15,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            dragTarget.m_TargetSpring.enabled = false;
-            Debug.Log("Entré !");  
+            dragTarget.m_TargetSpring.enabled = false; 
         }
     }
 
@@ -37,7 +24,6 @@ public class Player : MonoBehaviour
         if(Col.gameObject.tag != "Star")
         {
             dragTarget.m_TargetSpring.enabled = true;
-            Debug.Log("Sorti !");
         }
         
     }
