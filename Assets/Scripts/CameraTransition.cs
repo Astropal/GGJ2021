@@ -28,21 +28,44 @@ public class CameraTransition : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D Col) {
-        if(Col.gameObject.tag == "Player")
-        {
-            if(alreadyplayed == "n"){
+    private void OnTriggerEnter2D() {
 
-                Animation animation = mainCam.GetComponent<Animation>();
-                string animationName = "CameraMove" + (string) planet.name;
-                animation[animationName].speed = 1;
-                animation.Play(animationName);
-                alreadyplayed = "y";
+        if(alreadyplayed == "n"){
 
-                // Display children
-                //gameObject.transform.Find("Player").gameObject.SetActive(true);
-                gameObject.transform.Find("PNJS").gameObject.SetActive(true);
-            } 
-        }
+            Animation animation = mainCam.GetComponent<Animation>();
+            Animation animationP = planet.GetComponent<Animation>();
+            string animationName = "CameraMove" + (string) planet.name;
+            animation[animationName].speed = 1;
+            animationP["PlanetZoom"].speed = 1;
+            animation.Play(animationName);
+            animationP.Play("PlanetZoom");
+            alreadyplayed = "y";
+
+            // Display children
+            //gameObject.transform.Find("Player").gameObject.SetActive(true);
+            gameObject.transform.Find("PNJS").gameObject.SetActive(true);
+        } 
+        
+    }
+
+    private void OnTriggerExit2D(){
+        if(GlobalState.instance.guiOpen) return;
+        
+        // Display children
+        //gameObject.transform.parent.gameObject.SetActive(false);
+        gameObject.transform.Find("PNJS").gameObject.SetActive(false);
+
+        Animation animationP = planet.GetComponent<Animation>();
+        
+        Animation animation = mainCam.GetComponent<Animation>();
+        string animationName = "CameraMove" + (string) planet.name;
+        animation[animationName].speed = -1;
+        animation[animationName].time = animation[animationName].length;
+        animationP["PlanetZoom"].speed = -1;
+        animationP["PlanetZoom"].time = animationP["PlanetZoom"].length;
+        animationP.Play("PlanetZoom");
+        animation.Play(animationName);
+
+        CameraTransition.alreadyplayed = "n";
     }
 }
