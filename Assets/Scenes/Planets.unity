@@ -121,54 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &841550164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1740320838273171400, guid: 309daf28fada77d4dbf20d54d034ef07,
-    type: 3}
-  m_PrefabInstance: {fileID: 900293344695213187}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &841550167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841550164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25a51021bedba9b4282177a5bbbb9101, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCam: {fileID: 1712205047}
-  planet: {fileID: 1513081825}
---- !u!60 &841550168
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841550164}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.59, y: 6.74}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.4330127, y: -0.25000003}
-      - {x: 0.43301272, y: -0.24999996}
 --- !u!1 &860292870
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712205046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -961,12 +913,12 @@ PrefabInstance:
     - target: {fileID: 1834571449458456405, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.95643914
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1834571449458456405, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.95643914
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1834571449458456405, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
@@ -991,7 +943,7 @@ PrefabInstance:
     - target: {fileID: 2372110780170950314, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2599278367041756237, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
@@ -1057,6 +1009,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 323.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842542135185998564, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842542135185998564, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09676286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842542135185998564, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09676286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842542135185998564, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09676286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842542135185998564, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.359
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842542135185998565, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4402904410223850162, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
