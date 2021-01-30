@@ -35,12 +35,7 @@ public class PNJ : MonoBehaviour
     {
       gameObject.GetComponent<InteractiveObject>().ToggleHoverIndicator(false);
       Transform parent;
-    //   Debug.Log(GameObject.FindGameObjectsWithTag("MiniGameGUI"));
-    //   GameObject gui = GameObject.FindGameObjectsWithTag("MiniGameGUI")[1];
-      //parent = gameObject.transform.parent.parent.gameObject.FindWithTag("MiniGameGUI");
-    //   Debug.Log(gui[0].ToString());
-        miniGame.GetComponent<MiniGame>().Show(true);
-      //GetComponent<MiniGame>().Show(true);
+      miniGame.GetComponent<MiniGame>().Show(true);
     }
 
   }
