@@ -23,7 +23,7 @@ public class PNJ : MonoBehaviour
       gui = GameObject.FindGameObjectsWithTag("Player");
       foreach (var item in gui)
       {
-          Debug.Log(item.name);
+          //Debug.Log(item.name);
       }
 
   }

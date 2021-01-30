@@ -24,7 +24,7 @@ public class CameraBackToSolar : MonoBehaviour
         if(GlobalState.instance.guiOpen) return;
         
         // Display children
-        gameObject.transform.parent.gameObject.SetActive(false);
+        //gameObject.transform.parent.gameObject.SetActive(false);
         gameObject.transform.parent.parent.gameObject.transform.Find("PNJS").gameObject.SetActive(false);
 
 

@@ -28,20 +28,21 @@ public class CameraTransition : MonoBehaviour
     }
 
 
-    private void OnMouseDown() {
+    private void OnTriggerEnter2D(Collider2D Col) {
+        if(Col.gameObject.tag == "Player")
+        {
+            if(alreadyplayed == "n"){
 
-        if(alreadyplayed == "n"){
+                Animation animation = mainCam.GetComponent<Animation>();
+                string animationName = "CameraMove" + (string) planet.name;
+                animation[animationName].speed = 1;
+                animation.Play(animationName);
+                alreadyplayed = "y";
 
-            Animation animation = mainCam.GetComponent<Animation>();
-            string animationName = "CameraMove" + (string) planet.name;
-            animation[animationName].speed = 1;
-            animation.Play(animationName);
-            alreadyplayed = "y";
-
-            // Display children
-            gameObject.transform.Find("Player").gameObject.SetActive(true);
-            gameObject.transform.Find("PNJS").gameObject.SetActive(true);
-        } 
-        
+                // Display children
+                //gameObject.transform.Find("Player").gameObject.SetActive(true);
+                gameObject.transform.Find("PNJS").gameObject.SetActive(true);
+            } 
+        }
     }
 }
