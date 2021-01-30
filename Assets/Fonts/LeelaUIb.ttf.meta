@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 7f0a0eaa9407469429dd5c2fce34a313
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Leelawadee UI
+  fontNames:
+  - Leelawadee UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3137777c96e415f4ead86411b86309cd, type: 3}
+  - {fileID: 12800000, guid: 4679f3fc2aa7e884890acf0897c03786, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
