@@ -18,13 +18,12 @@ public class DragTarget : MonoBehaviour
 
 	public bool m_DrawDragLine = true;
 	public Color m_Color = Color.cyan;
-
-	public GameObject Player;
-	public GameObject Part;
-
 	private TargetJoint2D m_TargetJoint;
 
 	public SpringJoint2D m_TargetSpring;
+	public GameObject Ship;
+	public GameObject Part;
+	public Player player;
 
 	void Update ()
 	{
@@ -44,12 +43,14 @@ public class DragTarget : MonoBehaviour
 			if (!body)
 				return;
 
+			Part.GetComponent<PolygonCollider2D>().enabled = false;
+
 			// Add a target joint to the Rigidbody2D GameObject.
 			m_TargetJoint = body.gameObject.AddComponent<TargetJoint2D> ();
 			m_TargetJoint.dampingRatio = m_Damping;
 			m_TargetJoint.frequency = m_Frequency;
 
-			
+			player.velocity.constraints = RigidbodyConstraints2D.None;
 			m_TargetSpring = body.gameObject.GetComponent<SpringJoint2D> ();
 
 			// Attach the anchor to the local-point where we clicked.
@@ -57,6 +58,7 @@ public class DragTarget : MonoBehaviour
 		}
 		else if (Input.GetMouseButtonUp (0))
 		{
+			Part.GetComponent<PolygonCollider2D>().enabled = true;
 			Destroy (m_TargetJoint);
 			m_TargetJoint = null;
 			return;
