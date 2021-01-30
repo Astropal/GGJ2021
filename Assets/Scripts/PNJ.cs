@@ -7,6 +7,7 @@ public class PNJ : MonoBehaviour
 
   public string Name = "PNJ";
   public bool MiniGameMaster = false;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -21,8 +22,10 @@ public class PNJ : MonoBehaviour
 
   void OnMouseDown()
   {
+    if(GlobalState.instance.guiOpen) return;
     if (MiniGameMaster)
     {
+      gameObject.GetComponent<InteractiveObject>().ToggleHoverIndicator(false);
       Transform parent;
       parent = transform.parent.parent.Find("MiniGame");
       parent.gameObject.GetComponent<MiniGame>().Show(true);

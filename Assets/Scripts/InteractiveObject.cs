@@ -20,15 +20,17 @@ public class InteractiveObject : MonoBehaviour
 
   void OnMouseEnter()
   {
+    if(GlobalState.instance.guiOpen) return;
     ToggleHoverIndicator(true);
   }
 
   void OnMouseExit()
   {
+    if(GlobalState.instance.guiOpen) return;
     ToggleHoverIndicator(false);
   }
 
-  void ToggleHoverIndicator(bool toggle)
+  public void ToggleHoverIndicator(bool toggle)
   {
     Color newColor;
     SpriteRenderer sr = hoverIndicator.GetComponent<SpriteRenderer>();
