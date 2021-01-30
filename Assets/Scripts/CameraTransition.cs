@@ -8,7 +8,7 @@ public class CameraTransition : MonoBehaviour
     public Camera mainCam;
     public GameObject planet;
 
-    public string alreadyplayed = "n";
+    public static string alreadyplayed = "n";
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +31,11 @@ public class CameraTransition : MonoBehaviour
     private void OnMouseDown() {
 
         if(alreadyplayed == "n"){
+
+            Animation animation = mainCam.GetComponent<Animation>();
             string animationName = "CameraMove" + (string) planet.name;
-            mainCam.GetComponent<Animation>().Play(animationName);
+            animation[animationName].speed = 1;
+            animation.Play(animationName);
             alreadyplayed = "y";
 
             // Display children
