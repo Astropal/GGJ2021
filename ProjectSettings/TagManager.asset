@@ -7,6 +7,10 @@ TagManager:
   - MiniGameGUI
   - planet
   - Star
+  - Zone
+  - ZoneExt
+  - LiquideGlace
+  - LiquideIndicatorGlace
   layers:
   - Default
   - TransparentFX
