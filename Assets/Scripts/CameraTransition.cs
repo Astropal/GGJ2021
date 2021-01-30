@@ -34,6 +34,10 @@ public class CameraTransition : MonoBehaviour
             string animationName = "CameraMove" + (string) planet.name;
             mainCam.GetComponent<Animation>().Play(animationName);
             alreadyplayed = "y";
+
+            // Display children
+            gameObject.transform.Find("Player").gameObject.SetActive(true);
+            gameObject.transform.Find("PNJS").gameObject.SetActive(true);
         } 
         
     }
