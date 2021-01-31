@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7947528369569618353}
   - component: {fileID: 7947528369569618352}
+  - component: {fileID: 962663374}
   m_Layer: 0
   m_Name: Dragger
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,3 +55,15 @@ MonoBehaviour:
   Ship: {fileID: 0}
   Part: {fileID: 0}
   player: {fileID: 0}
+--- !u!114 &962663374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947528369569618355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f63d9c28ce3d584fb300dde819cf36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
