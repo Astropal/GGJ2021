@@ -1785,6 +1785,10 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1712205047}
+    - target: {fileID: 830002723, guid: c5eb94c8467f6354f94714938f17396e, type: 3}
+      propertyPath: m_Radius
+      value: 22.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1376089300549503959, guid: c5eb94c8467f6354f94714938f17396e,
         type: 3}
       propertyPath: m_Name

@@ -10,6 +10,10 @@ public class CameraTransition : MonoBehaviour
 
     public static string alreadyplayed = "n";
 
+    private void Awake() {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +56,7 @@ public class CameraTransition : MonoBehaviour
     }
 
     private void OnTriggerExit2D(){
-        if(GlobalState.instance.guiOpen) return;
+        // if(GlobalState.instance.guiOpen) return;
         
         // Display children
         //gameObject.transform.parent.gameObject.SetActive(false);

@@ -13,7 +13,7 @@ public class Planet : MonoBehaviour
   public bool prevSolved = false;
 
   private void Awake() {
-    DontDestroyOnLoad(gameObject);
+    // DontDestroyOnLoad(gameObject);
   }
   // Start is called before the first frame update
   void Start()

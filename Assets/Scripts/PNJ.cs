@@ -39,6 +39,7 @@ public class PNJ : MonoBehaviour
       GlobalState.instance.prevPlayerPos = GameObject.FindWithTag("Player").transform.Find("Part").transform.position;
       // Transform parent;
       // miniGame.GetComponent<MiniGame>().Show(true);
+
       SceneManager.LoadScene("MiniJeuGlaces");
     }
 
