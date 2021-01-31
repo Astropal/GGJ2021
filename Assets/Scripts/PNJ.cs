@@ -47,6 +47,5 @@ public class PNJ : MonoBehaviour
     } else {
             DialogueManager.MiniGameMaster = false;
     }
-
   }
 }

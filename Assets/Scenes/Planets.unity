@@ -391,12 +391,12 @@ PrefabInstance:
     - target: {fileID: 3015914014366991871, guid: 0e3e20a5d949d1844867a44366252276,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.5
+      value: -92.8
       objectReference: {fileID: 0}
     - target: {fileID: 3015914014366991871, guid: 0e3e20a5d949d1844867a44366252276,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.2
+      value: 62.3
       objectReference: {fileID: 0}
     - target: {fileID: 3015914014366991871, guid: 0e3e20a5d949d1844867a44366252276,
         type: 3}
@@ -1291,27 +1291,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1014307729 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5141872453995991669, guid: c5eb94c8467f6354f94714938f17396e,
-    type: 3}
-  m_PrefabInstance: {fileID: 5414986774119990079}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1014307738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014307729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61cb9df5697904040a52a27485ed311b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiOpen: 0
-  prevPlayerPos: {x: 0, y: 0, z: 0}
-  glaceSolved: 0
 --- !u!4 &1029128938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3015914014366991871, guid: 0e3e20a5d949d1844867a44366252276,
@@ -2483,12 +2462,12 @@ PrefabInstance:
     - target: {fileID: 6701497807389079795, guid: c5eb94c8467f6354f94714938f17396e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -116.7
+      value: -59
       objectReference: {fileID: 0}
     - target: {fileID: 6701497807389079795, guid: c5eb94c8467f6354f94714938f17396e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 73.5
+      value: 27.1
       objectReference: {fileID: 0}
     - target: {fileID: 6701497807389079795, guid: c5eb94c8467f6354f94714938f17396e,
         type: 3}
