@@ -833,6 +833,11 @@ PrefabInstance:
       propertyPath: MiniGameMaster
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8377901753073641531, guid: 706192e3c7e41bc40a27bfcb7f6b7102,
+        type: 3}
+      propertyPath: NameOfMiniGame
+      value: MiniJeuGlaces
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706192e3c7e41bc40a27bfcb7f6b7102, type: 3}
 --- !u!4 &8194298193469725896 stripped

@@ -9,6 +9,8 @@ public class PNJ : MonoBehaviour
   public string Name = "PNJ";
   public bool MiniGameMaster = false;
 
+  public string NameOfMiniGame;
+
   public MiniGame miniGame;
 
   // Start is called before the first frame update
@@ -40,7 +42,7 @@ public class PNJ : MonoBehaviour
       // Transform parent;
       // miniGame.GetComponent<MiniGame>().Show(true);
 
-      SceneManager.LoadScene("MiniJeuGlaces");
+      SceneManager.LoadScene(NameOfMiniGame);
     }
   }
 }
