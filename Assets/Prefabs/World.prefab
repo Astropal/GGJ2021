@@ -255,6 +255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Planet
   miniGame: {fileID: 561111262219709627}
+  Solved: 0
+  prevSolved: 0
 --- !u!58 &4696277473031536094
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,20 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Thermo : MonoBehaviour
 {
+
+  public int timeout = 1000;
+  public bool win = false;
+
   public GameObject indicatorSize;
   // Start is called before the first frame update
   void Start()
   {
-
+      // win = true;
   }
 
   // Update is called once per frame
   void Update()
   {
+    if(timeout > 0 && win) {
+      timeout--;
+    }
+    if(timeout <= 0) {
+        win = false; // Ne pas répéter
+        GlobalState.instance.glaceSolved = true;
 
+        // Mini jeu gagné
+        SceneManager.LoadScene("Planets");
+
+
+    }
   }
 
   private int elements = 0;
@@ -55,6 +71,8 @@ public class Thermo : MonoBehaviour
             new Vector3(indicatorSize.transform.localScale.x,
                 4.2f,
                 indicatorSize.transform.localScale.z);
+
+      win = true;
     }
   }
 }

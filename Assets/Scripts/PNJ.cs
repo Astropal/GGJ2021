@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PNJ : MonoBehaviour
 {
@@ -30,14 +31,15 @@ public class PNJ : MonoBehaviour
 
   private void OnMouseDown()
   {
-          Debug.Log("Open minigame " + GlobalState.instance.guiOpen);
-
-    if(GlobalState.instance.guiOpen) return;
+    if(GlobalState.instance.guiOpen || GlobalState.instance.glaceSolved) return;
     if (MiniGameMaster)
     {
       gameObject.GetComponent<InteractiveObject>().ToggleHoverIndicator(false);
-      Transform parent;
-      miniGame.GetComponent<MiniGame>().Show(true);
+      Debug.Log("p: " + GameObject.FindWithTag("Player").transform.Find("Part").transform.position);
+      GlobalState.instance.prevPlayerPos = GameObject.FindWithTag("Player").transform.Find("Part").transform.position;
+      // Transform parent;
+      // miniGame.GetComponent<MiniGame>().Show(true);
+      SceneManager.LoadScene("MiniJeuGlaces");
     }
 
   }
