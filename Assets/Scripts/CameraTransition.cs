@@ -19,6 +19,9 @@ public class CameraTransition : MonoBehaviour
             animationP.Play("PlanetZoom");
             alreadyplayed = "y";
             gameObject.transform.Find("PNJS").gameObject.SetActive(true);
+
+            GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlayGlace();
+
         } 
         
     }
@@ -31,5 +34,6 @@ public class CameraTransition : MonoBehaviour
         animationP["PlanetZoom"].time = animationP["PlanetZoom"].length;
         animationP.Play("PlanetZoom");
         CameraTransition.alreadyplayed = "n";
+        GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlaySpace();
     }
 }

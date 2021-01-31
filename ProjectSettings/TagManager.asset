@@ -16,6 +16,7 @@ TagManager:
   - Full_Thermo
   - Tube
   - Ingredient
+  - Music
   layers:
   - Default
   - TransparentFX
