@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Planets.unity
     guid: f9bb77f4eba197a41bd1148a43964a9b
   - enabled: 1
-    path: Assets/Scenes/MiniJeuGlaces.unity
-    guid: d86c762cba47554429c6dedb299eda35
+    path: Assets/Scenes/MiniJeuLumiere.unity
+    guid: 556cdfa6c03c6304ebce0c7a5318612b
   m_configObjects: {}

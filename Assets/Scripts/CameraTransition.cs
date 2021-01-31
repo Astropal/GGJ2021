@@ -43,7 +43,7 @@ public class CameraTransition : MonoBehaviour
 
             // Display children
             //gameObject.transform.Find("Player").gameObject.SetActive(true);
-            gameObject.transform.Find("PNJS").gameObject.SetActive(true);
+            gameObject.transform.parent.gameObject.transform.Find("PNJS").gameObject.SetActive(true);
         } 
         
     }
@@ -53,7 +53,7 @@ public class CameraTransition : MonoBehaviour
         
         // Display children
         //gameObject.transform.parent.gameObject.SetActive(false);
-        gameObject.transform.Find("PNJS").gameObject.SetActive(false);
+        gameObject.transform.parent.gameObject.transform.Find("PNJS").gameObject.SetActive(false);
 
         Animation animationP = planet.GetComponent<Animation>();
         

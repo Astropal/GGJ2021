@@ -15,6 +15,7 @@ TagManager:
   - Reglette
   - Full_Thermo
   - Tube
+  - Ingredient
   layers:
   - Default
   - TransparentFX
