@@ -253,10 +253,9 @@ GameObject:
   - component: {fileID: 41577937}
   - component: {fileID: 41577936}
   - component: {fileID: 41577935}
-  - component: {fileID: 41577940}
   m_Layer: 0
   m_Name: Quad (12)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,6 +272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &41577936
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -346,23 +350,123 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &41577940
+--- !u!1 &158728049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158728051}
+  - component: {fileID: 158728050}
+  - component: {fileID: 158728052}
+  - component: {fileID: 158728053}
+  m_Layer: 0
+  m_Name: croix4
+  m_TagString: error
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &158728050
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158728049}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 88efba13f59f8f34e9bc716451289df1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.77}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &158728051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158728049}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.5904717, y: 0.05930622, z: 0}
+  m_LocalScale: {x: 3.542517, y: 2.8222682, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939756645}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158728052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41577934}
+  m_GameObject: {fileID: 158728049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
+  m_Script: {fileID: 11500000, guid: e74bf32957c3be348a99843b8abb80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
+  isActive: 0
+--- !u!95 &158728053
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158728049}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4cfe38c5298f15f429370524ac51b1b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &203666573
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,10 +480,9 @@ GameObject:
   - component: {fileID: 203666576}
   - component: {fileID: 203666575}
   - component: {fileID: 203666574}
-  - component: {fileID: 203666579}
   m_Layer: 0
   m_Name: Quad (19)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,6 +499,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &203666575
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -469,23 +577,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &203666579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203666573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &289222671
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &294374767
 GameObject:
@@ -591,10 +684,9 @@ GameObject:
   - component: {fileID: 294374770}
   - component: {fileID: 294374769}
   - component: {fileID: 294374768}
-  - component: {fileID: 294374773}
   m_Layer: 0
   m_Name: Quad (15)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -611,6 +703,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &294374769
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -684,23 +781,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &294374773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294374767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &386684952
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,10 +796,9 @@ GameObject:
   - component: {fileID: 386684955}
   - component: {fileID: 386684954}
   - component: {fileID: 386684953}
-  - component: {fileID: 386684958}
   m_Layer: 0
   m_Name: Quad (2)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,6 +815,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &386684954
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -807,23 +893,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &386684958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386684952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &531304879
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,10 +908,9 @@ GameObject:
   - component: {fileID: 531304882}
   - component: {fileID: 531304881}
   - component: {fileID: 531304880}
-  - component: {fileID: 531304885}
   m_Layer: 0
   m_Name: Quad (6)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,6 +927,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &531304881
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -930,23 +1005,123 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &531304885
+--- !u!1 &560978001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560978003}
+  - component: {fileID: 560978002}
+  - component: {fileID: 560978004}
+  - component: {fileID: 560978005}
+  m_Layer: 0
+  m_Name: croix1
+  m_TagString: error
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &560978002
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560978001}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 88efba13f59f8f34e9bc716451289df1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.77}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &560978003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560978001}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.35, y: 0.01, z: 0}
+  m_LocalScale: {x: 3.542517, y: 2.8222682, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939756645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560978004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531304879}
+  m_GameObject: {fileID: 560978001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
+  m_Script: {fileID: 11500000, guid: e74bf32957c3be348a99843b8abb80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
+  isActive: 0
+--- !u!95 &560978005
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560978001}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d8513695d95a7c439f7cfe5dff20fa8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &616196260
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,10 +1135,9 @@ GameObject:
   - component: {fileID: 616196263}
   - component: {fileID: 616196262}
   - component: {fileID: 616196261}
-  - component: {fileID: 616196266}
   m_Layer: 0
   m_Name: Quad (9)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -980,6 +1154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &616196262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1053,23 +1232,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &616196266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616196260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &635186764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683901200
 GameObject:
@@ -1166,10 +1330,9 @@ GameObject:
   - component: {fileID: 683901203}
   - component: {fileID: 683901202}
   - component: {fileID: 683901201}
-  - component: {fileID: 683901206}
   m_Layer: 0
   m_Name: Quad (18)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1186,6 +1349,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &683901202
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1259,23 +1427,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &683901206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683901200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &764006900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,10 +1442,9 @@ GameObject:
   - component: {fileID: 764006903}
   - component: {fileID: 764006902}
   - component: {fileID: 764006901}
-  - component: {fileID: 764006906}
   m_Layer: 0
   m_Name: Quad (5)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1309,6 +1461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &764006902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1382,23 +1539,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &764006906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764006900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &776359237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,10 +1554,9 @@ GameObject:
   - component: {fileID: 776359240}
   - component: {fileID: 776359239}
   - component: {fileID: 776359238}
-  - component: {fileID: 776359243}
   m_Layer: 0
   m_Name: Quad (13)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,6 +1573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &776359239
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1505,23 +1651,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &776359243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776359237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &839382478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,10 +1666,9 @@ GameObject:
   - component: {fileID: 839382481}
   - component: {fileID: 839382480}
   - component: {fileID: 839382479}
-  - component: {fileID: 839382484}
   m_Layer: 0
   m_Name: Quad (16)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,6 +1685,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &839382480
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1628,23 +1763,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &839382484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839382478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &897692536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,10 +1778,9 @@ GameObject:
   - component: {fileID: 897692539}
   - component: {fileID: 897692538}
   - component: {fileID: 897692537}
-  - component: {fileID: 897692542}
   m_Layer: 0
   m_Name: Quad (25)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1678,6 +1797,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &897692538
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1751,23 +1875,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &897692542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897692536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &925854052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,10 +1890,9 @@ GameObject:
   - component: {fileID: 925854055}
   - component: {fileID: 925854054}
   - component: {fileID: 925854053}
-  - component: {fileID: 925854058}
   m_Layer: 0
   m_Name: Quad (11)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1801,6 +1909,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &925854054
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1874,23 +1987,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &925854058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925854052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &980841711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,10 +2002,9 @@ GameObject:
   - component: {fileID: 980841714}
   - component: {fileID: 980841713}
   - component: {fileID: 980841712}
-  - component: {fileID: 980841717}
   m_Layer: 0
   m_Name: Quad (10)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1924,6 +2021,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &980841713
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1997,23 +2099,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &980841717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980841711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &982955456
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,10 +2114,9 @@ GameObject:
   - component: {fileID: 982955459}
   - component: {fileID: 982955458}
   - component: {fileID: 982955457}
-  - component: {fileID: 982955462}
   m_Layer: 0
   m_Name: Quad (23)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2047,6 +2133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &982955458
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2120,23 +2211,51 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &982955462
+--- !u!1 &1053807857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053807859}
+  - component: {fileID: 1053807858}
+  m_Layer: 0
+  m_Name: StartGameEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1053807858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982955456}
+  m_GameObject: {fileID: 1053807857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a5d633a37ee575449512b17ecd0de1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
+--- !u!4 &1053807859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053807857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.032789096, y: 0.43399632, z: 556.52734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1063177230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,10 +2347,9 @@ GameObject:
   - component: {fileID: 1065986471}
   - component: {fileID: 1065986470}
   - component: {fileID: 1065986469}
-  - component: {fileID: 1065986474}
   m_Layer: 0
   m_Name: Quad (20)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2248,6 +2366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1065986470
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2321,23 +2444,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1065986474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1065986468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1105937680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,10 +2459,9 @@ GameObject:
   - component: {fileID: 1105937683}
   - component: {fileID: 1105937682}
   - component: {fileID: 1105937681}
-  - component: {fileID: 1105937686}
   m_Layer: 0
   m_Name: Quad (26)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2371,6 +2478,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1105937682
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2444,23 +2556,123 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1105937686
+--- !u!1 &1190517878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1190517880}
+  - component: {fileID: 1190517879}
+  - component: {fileID: 1190517881}
+  - component: {fileID: 1190517882}
+  m_Layer: 0
+  m_Name: croix2
+  m_TagString: error
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1190517879
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190517878}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 88efba13f59f8f34e9bc716451289df1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.77}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1190517880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190517878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.87, y: 0.09812425, z: 0}
+  m_LocalScale: {x: 3.542517, y: 2.8222682, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939756645}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1190517881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105937680}
+  m_GameObject: {fileID: 1190517878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
+  m_Script: {fileID: 11500000, guid: e74bf32957c3be348a99843b8abb80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
+  isActive: 0
+--- !u!95 &1190517882
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190517878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e067eb6556f952c43a5ec6697e0cfea8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1243012572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,10 +2686,9 @@ GameObject:
   - component: {fileID: 1243012575}
   - component: {fileID: 1243012574}
   - component: {fileID: 1243012573}
-  - component: {fileID: 1243012578}
   m_Layer: 0
   m_Name: Quad (21)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2494,6 +2705,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1243012574
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2567,23 +2783,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1243012578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243012572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1351046295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,10 +2798,9 @@ GameObject:
   - component: {fileID: 1351046298}
   - component: {fileID: 1351046297}
   - component: {fileID: 1351046296}
-  - component: {fileID: 1351046301}
   m_Layer: 0
   m_Name: Quad (7)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2617,6 +2817,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1351046297
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2690,23 +2895,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1351046301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351046295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1434475093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,10 +2910,9 @@ GameObject:
   - component: {fileID: 1434475096}
   - component: {fileID: 1434475095}
   - component: {fileID: 1434475094}
-  - component: {fileID: 1434475099}
   m_Layer: 0
   m_Name: Quad
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2740,6 +2929,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1434475095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2813,23 +3007,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1434475099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434475093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1525106394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,10 +3022,9 @@ GameObject:
   - component: {fileID: 1525106397}
   - component: {fileID: 1525106395}
   - component: {fileID: 1525106396}
-  - component: {fileID: 1525106400}
   m_Layer: 0
   m_Name: Quad (3)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2863,6 +3041,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!61 &1525106396
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2948,23 +3131,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1525106400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525106394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1541981923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,10 +3146,9 @@ GameObject:
   - component: {fileID: 1541981926}
   - component: {fileID: 1541981925}
   - component: {fileID: 1541981924}
-  - component: {fileID: 1541981929}
   m_Layer: 0
   m_Name: Quad (14)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2998,6 +3165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1541981925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3071,23 +3243,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1541981929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541981923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1545646857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,7 +3309,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571011125
 GameObject:
@@ -3167,10 +3324,9 @@ GameObject:
   - component: {fileID: 1571011128}
   - component: {fileID: 1571011127}
   - component: {fileID: 1571011126}
-  - component: {fileID: 1571011131}
   m_Layer: 0
   m_Name: Quad (8)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3187,6 +3343,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1571011127
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3260,23 +3421,123 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1571011131
+--- !u!1 &1582785649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582785651}
+  - component: {fileID: 1582785650}
+  - component: {fileID: 1582785652}
+  - component: {fileID: 1582785653}
+  m_Layer: 0
+  m_Name: croix3
+  m_TagString: error
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1582785650
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582785649}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 88efba13f59f8f34e9bc716451289df1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.75, y: 0.77}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1582785651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582785649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7825899, y: 0.09812425, z: 0}
+  m_LocalScale: {x: 3.542517, y: 2.8222682, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939756645}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582785652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1571011125}
+  m_GameObject: {fileID: 1582785649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
+  m_Script: {fileID: 11500000, guid: e74bf32957c3be348a99843b8abb80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
+  isActive: 0
+--- !u!95 &1582785653
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582785649}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5f68ee5ae23b2445a2c183e6e22e3fc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1596253670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,10 +3551,9 @@ GameObject:
   - component: {fileID: 1596253673}
   - component: {fileID: 1596253672}
   - component: {fileID: 1596253671}
-  - component: {fileID: 1596253676}
   m_Layer: 0
   m_Name: Quad (1)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3310,6 +3570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1596253672
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3383,23 +3648,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1596253676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596253670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: TEst
-  toFound: 0
-  isFound: 0
 --- !u!1 &1632968734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,10 +3663,9 @@ GameObject:
   - component: {fileID: 1632968737}
   - component: {fileID: 1632968736}
   - component: {fileID: 1632968735}
-  - component: {fileID: 1632968740}
   m_Layer: 0
   m_Name: Quad (22)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3433,6 +3682,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1632968736
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3506,23 +3760,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1632968740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632968734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1709585895
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,8 +3853,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 14451954}
+  - {fileID: 1939756645}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3635,10 +3875,9 @@ GameObject:
   - component: {fileID: 1843601092}
   - component: {fileID: 1843601091}
   - component: {fileID: 1843601090}
-  - component: {fileID: 1843601095}
   m_Layer: 0
   m_Name: Quad (24)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3655,6 +3894,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1843601091
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3728,23 +3972,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1843601095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843601089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
 --- !u!1 &1916940388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,10 +3987,9 @@ GameObject:
   - component: {fileID: 1916940391}
   - component: {fileID: 1916940390}
   - component: {fileID: 1916940389}
-  - component: {fileID: 1916940394}
   m_Layer: 0
   m_Name: Quad (17)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3778,6 +4006,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &1916940390
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3847,27 +4080,97 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916940388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.65, y: 3.42, z: 60.740234}
+  m_LocalPosition: {x: 3.65, y: 2.33, z: 60.740234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1916940394
-MonoBehaviour:
+--- !u!1 &1939756644
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916940388}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939756645}
+  - component: {fileID: 1939756646}
+  m_Layer: 0
+  m_Name: uiErreur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939756645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939756644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 390.4, y: 272.7, z: -5660.9995}
+  m_LocalScale: {x: 20.246513, y: 24.179369, z: 62.899994}
+  m_Children:
+  - {fileID: 560978003}
+  - {fileID: 1190517880}
+  - {fileID: 1582785651}
+  - {fileID: 158728051}
+  m_Father: {fileID: 1709585899}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1939756646
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939756644}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 81a7158d7ffa25747affdaebbf28790a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 15.92, y: 2.84}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2125915360
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,10 +4184,9 @@ GameObject:
   - component: {fileID: 2125915363}
   - component: {fileID: 2125915362}
   - component: {fileID: 2125915361}
-  - component: {fileID: 2125915366}
   m_Layer: 0
   m_Name: Quad (4)
-  m_TagString: Untagged
+  m_TagString: ObjectGames
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3901,6 +4203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e3e426993c82c42a9aa36fcf31453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelObject:
+    name: 
+    toFound: 0
+    isFound: 0
+  animatorCroix: {fileID: 0}
 --- !u!64 &2125915362
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3974,20 +4281,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2125915366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125915360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baabe988d2d7989459dae2e48391187a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: 
-  toFound: 0
-  isFound: 0
