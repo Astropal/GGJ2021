@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
- [System.Serializable]
-public class MenuDialog
+public class MenuDialog : MonoBehaviour
 {
-
     public string PlayerName;
     public string NPCName;
 

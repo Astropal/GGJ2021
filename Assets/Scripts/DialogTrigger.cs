@@ -12,7 +12,6 @@ public class DialogTrigger : MonoBehaviour {
     }
 
     void OnMouseUp() {
-        test = false;
     }
 
     void TriggerDialogue() 
