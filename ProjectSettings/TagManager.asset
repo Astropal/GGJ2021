@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MiniGameGUI
-  - planet
   - Star
+  - planet
+  - Arme
+  - Rope
+  - Ligth
+  - Food
+  - Camera
   layers:
   - Default
   - TransparentFX
