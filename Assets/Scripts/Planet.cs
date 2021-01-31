@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Planet : MonoBehaviour
 {
@@ -36,7 +37,9 @@ public class Planet : MonoBehaviour
 
   void OnMouseDown()
   {
-    // Solved = !Solved;
-    // setAlpha(Solved ? 1f : 0.5f);
+    Solved = !Solved;
+    //setAlpha(Solved ? 1f : 0.5f);
+    
+   // SceneManager.LoadScene("MiniJeuLumiere");
   }
 }
