@@ -44,6 +44,9 @@ public class CameraTransition : MonoBehaviour
             // Display children
             //gameObject.transform.Find("Player").gameObject.SetActive(true);
             gameObject.transform.Find("PNJS").gameObject.SetActive(true);
+
+            GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlayGlace();
+
         } 
         
     }
@@ -54,6 +57,8 @@ public class CameraTransition : MonoBehaviour
         // Display children
         //gameObject.transform.parent.gameObject.SetActive(false);
         gameObject.transform.Find("PNJS").gameObject.SetActive(false);
+
+        GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlaySpace();
 
         Animation animationP = planet.GetComponent<Animation>();
         
