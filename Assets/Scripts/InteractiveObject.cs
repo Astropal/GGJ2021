@@ -20,6 +20,7 @@ public class InteractiveObject : MonoBehaviour
 
   void OnMouseEnter()
   {
+    Debug.Log("Mouse hover PNJ");
     if(GlobalState.instance.guiOpen) return;
     ToggleHoverIndicator(true);
   }

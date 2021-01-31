@@ -30,6 +30,8 @@ public class PNJ : MonoBehaviour
 
   private void OnMouseDown()
   {
+          Debug.Log("Open minigame " + GlobalState.instance.guiOpen);
+
     if(GlobalState.instance.guiOpen) return;
     if (MiniGameMaster)
     {
