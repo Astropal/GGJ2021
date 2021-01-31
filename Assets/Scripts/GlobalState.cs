@@ -6,11 +6,14 @@ public class GlobalState : MonoBehaviour {
 
     public bool guiOpen = false;
     public static GlobalState instance;
+    public Vector3 prevPlayerPos;
+
+    public bool glaceSolved = false;
     
     void Awake(){
         if (instance == null){
             instance = this;
-            // DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(gameObject);
         } else {
             Destroy(this);
         }

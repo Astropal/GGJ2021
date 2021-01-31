@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CloseMiniGame : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class CloseMiniGame : MonoBehaviour
         
     }
 
-    void OnMouseDown() {
-        transform.parent.gameObject.GetComponent<MiniGame>().Show(false);
+    void OnMouseUp() {
+        // transform.parent.gameObject.GetComponent<MiniGame>().Show(false);
+        SceneManager.LoadScene("Planets");
     }
 }
