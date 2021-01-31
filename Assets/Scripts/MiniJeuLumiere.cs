@@ -32,6 +32,7 @@ public class MiniJeuLumiere : MonoBehaviour
        if(nbIngredients == 2)
        {
            Debug.Log("Gagné !");
+           SceneManager.LoadScene("Planets");
        }
     }
     void OnTriggerExit2D(Collider2D Col)

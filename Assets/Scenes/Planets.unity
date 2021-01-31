@@ -226,6 +226,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dragger
       objectReference: {fileID: 0}
+    - target: {fileID: 7947528369569618355, guid: 3ef21eb45a708074cb675ecd62ddb293,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947528369569618355, guid: 3ef21eb45a708074cb675ecd62ddb293,
+        type: 3}
+      propertyPath: m_TagString
+      value: EditorOnly
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ef21eb45a708074cb675ecd62ddb293, type: 3}
 --- !u!1 &514035418
@@ -636,6 +646,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 843592033}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &962663372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947528369569618355, guid: 3ef21eb45a708074cb675ecd62ddb293,
+    type: 3}
+  m_PrefabInstance: {fileID: 389120010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &962663374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962663372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f63d9c28ce3d584fb300dde819cf36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1029128938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3015914014366991871, guid: 0e3e20a5d949d1844867a44366252276,
@@ -869,6 +897,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1700805337}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1395273295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395273292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f63d9c28ce3d584fb300dde819cf36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1499488164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3576639694369988470, guid: 06802e93fb3101b4b893b89d09562dba,
@@ -1021,6 +1061,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3576639694330895725, guid: 06802e93fb3101b4b893b89d09562dba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3576639694369988468, guid: 06802e93fb3101b4b893b89d09562dba,
         type: 3}
       propertyPath: m_DrawMode
@@ -1035,6 +1080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.34147528
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576639694369988470, guid: 06802e93fb3101b4b893b89d09562dba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06802e93fb3101b4b893b89d09562dba, type: 3}
@@ -1146,7 +1196,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 389120010}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 962663372}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 828013c1aecc5dc4da3551b8a5179512, type: 3}
@@ -1819,6 +1869,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3377777189001632148, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3410732920235001847, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
       propertyPath: m_RootOrder
@@ -2089,6 +2144,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6960549069385187983, guid: 309daf28fada77d4dbf20d54d034ef07,
+        type: 3}
+      propertyPath: planetLevel
+      value: MiniJeuLumiere
+      objectReference: {fileID: 0}
     - target: {fileID: 7087294339842720341, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
       propertyPath: m_IsActive
@@ -2142,7 +2202,7 @@ PrefabInstance:
     - target: {fileID: 8869189761962993807, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9130343168339275898, guid: 309daf28fada77d4dbf20d54d034ef07,
         type: 3}
