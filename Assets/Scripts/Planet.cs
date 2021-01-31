@@ -12,6 +12,11 @@ public class Planet : MonoBehaviour
   public bool Solved = false;
   public bool prevSolved = false;
 
+  public bool exited = false;
+  public bool prevExited = false;
+
+  public GameObject playerPrefab;
+
   private void Awake() {
     // DontDestroyOnLoad(gameObject);
   }
@@ -31,6 +36,17 @@ public class Planet : MonoBehaviour
     }
     if(GlobalState.instance.glaceSolved) {
       Solved = true;
+      setAlpha(0.2f);
+    }
+
+    if(exited != prevExited && exited) {
+      Debug.Log("Exited");
+      Debug.Log("Prev pos backup " + GlobalState.instance.prevPlayerPos);
+      GameObject.FindWithTag("Player").transform.Find("Part").transform.position = GlobalState.instance.prevPlayerPos;
+      prevExited = exited;
+    }
+    if(GlobalState.instance.glaceExit) {
+      exited = true;
       setAlpha(0.2f);
     }
   }

@@ -9,21 +9,20 @@ public class CameraTransition : MonoBehaviour
 
     public static string alreadyplayed = "n";
 
+    public bool prevIsInside = false;
+    public bool isInside = false;
+
+    private void OnTriggerStay2D(Collider2D other) {
+       isInside = true;
+       if(prevIsInside != isInside) {
+           prevIsInside = isInside;
+           alreadyplayed = "n";
+           OnEnter();
+       }
+    }
 
     private void OnTriggerEnter2D() {
-
-        if(alreadyplayed == "n"){
-
-            Animation animationP = planet.GetComponent<Animation>();
-            animationP["PlanetZoom"].speed = 1;
-            animationP.Play("PlanetZoom");
-            alreadyplayed = "y";
-            gameObject.transform.Find("PNJS").gameObject.SetActive(true);
-
-            GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlayGlace();
-
-        } 
-        
+        OnEnter();
     }
 
     private void OnTriggerExit2D(){
@@ -35,5 +34,19 @@ public class CameraTransition : MonoBehaviour
         animationP.Play("PlanetZoom");
         CameraTransition.alreadyplayed = "n";
         GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlaySpace();
+    }
+
+    private void OnEnter() {
+        if(alreadyplayed == "n"){
+
+            Animation animationP = planet.GetComponent<Animation>();
+            animationP["PlanetZoom"].speed = 1;
+            animationP.Play("PlanetZoom");
+            alreadyplayed = "y";
+            gameObject.transform.Find("PNJS").gameObject.SetActive(true);
+
+            GameObject.FindWithTag("Music").gameObject.GetComponent<Audio>().PlayGlace();
+
+        } 
     }
 }

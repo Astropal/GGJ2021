@@ -25,6 +25,7 @@ public class Thermo : MonoBehaviour
     if(timeout <= 0) {
         win = false; // Ne pas répéter
         GlobalState.instance.glaceSolved = true;
+        GlobalState.instance.glaceExit = true;
 
         // Mini jeu gagné
         SceneManager.LoadScene("Planets");

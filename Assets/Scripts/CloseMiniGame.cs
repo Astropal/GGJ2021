@@ -19,6 +19,7 @@ public class CloseMiniGame : MonoBehaviour
 
     void OnMouseUp() {
         // transform.parent.gameObject.GetComponent<MiniGame>().Show(false);
+        GlobalState.instance.glaceExit = true;
         SceneManager.LoadScene("Planets");
     }
 }

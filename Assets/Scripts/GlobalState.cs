@@ -9,6 +9,7 @@ public class GlobalState : MonoBehaviour {
     public Vector3 prevPlayerPos;
 
     public bool glaceSolved = false;
+    public bool glaceExit = false;
     
     void Awake(){
         if (instance == null){
