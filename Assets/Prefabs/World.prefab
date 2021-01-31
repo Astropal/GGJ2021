@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5414986773321922407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561111262219709627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cb9df5697904040a52a27485ed311b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiOpen: 0
+  prevPlayerPos: {x: 0, y: 0, z: 0}
+  glaceSolved: 0
+--- !u!114 &6358028789215881662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561111262219709627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cb9df5697904040a52a27485ed311b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiOpen: 0
+  prevPlayerPos: {x: 0, y: 0, z: 0}
+  glaceSolved: 0
+--- !u!114 &1399174561843580632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581717730376997939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea5d8c4928925b4ba140b025010a7c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5414986773201002037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581717730376997939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea5d8c4928925b4ba140b025010a7c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1376089300549503959
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,6 +63,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6701497807389079795}
+  - component: {fileID: 1087011653020500770}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -32,56 +87,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5414986773321922407
+--- !u!114 &1087011653020500770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561111262219709627}
+  m_GameObject: {fileID: 1376089300549503959}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61cb9df5697904040a52a27485ed311b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   guiOpen: 0
---- !u!114 &6358028789215881662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561111262219709627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61cb9df5697904040a52a27485ed311b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiOpen: 0
---- !u!114 &5414986773201002037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581717730376997939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea5d8c4928925b4ba140b025010a7c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1399174561843580632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581717730376997939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea5d8c4928925b4ba140b025010a7c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  prevPlayerPos: {x: 0, y: 0, z: 0}
+  glaceSolved: 0
 --- !u!1 &3472368630757518744
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +185,7 @@ GameObject:
   - component: {fileID: 5414986773618544379}
   - component: {fileID: 8493542255868796799}
   - component: {fileID: 7243978643797321007}
+  - component: {fileID: 7174136961801862608}
   m_Layer: 0
   m_Name: Planet
   m_TagString: planet
@@ -211,6 +232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Planet
   miniGame: {fileID: 561111262219709627}
+  Solved: 0
+  prevSolved: 0
 --- !u!58 &4696277473031536094
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -255,6 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Planet
   miniGame: {fileID: 0}
+  Solved: 0
+  prevSolved: 0
 --- !u!58 &61824535189750663
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -356,6 +381,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Planet
   miniGame: {fileID: 0}
+  Solved: 0
+  prevSolved: 0
+--- !u!114 &7174136961801862608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5141872453995991669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cb9df5697904040a52a27485ed311b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiOpen: 0
+  prevPlayerPos: {x: 0, y: 0, z: 0}
+  glaceSolved: 0
 --- !u!1 &5141872454799079011
 GameObject:
   m_ObjectHideFlags: 0
