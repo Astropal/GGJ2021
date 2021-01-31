@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
 
    public Animator animator;
 
+   public bool StrartMinigameGlace = false;
+
    private Queue<string> sentences;
    public static DialogueManager instance;
    private void Awake()
@@ -61,5 +63,8 @@ public class DialogueManager : MonoBehaviour
 
    void EndDialogue() {
        animator.SetBool("isOpen", false);
+       if(StrartMinigameGlace) {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+       }
    }
 }
