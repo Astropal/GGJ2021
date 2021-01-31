@@ -11,6 +11,10 @@ TagManager:
   - ZoneExt
   - LiquideGlace
   - LiquideIndicatorGlace
+  - Reservoir
+  - Reglette
+  - Full_Thermo
+  - Tube
   layers:
   - Default
   - TransparentFX
@@ -50,4 +54,7 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1494631969
+    locked: 0
+  - name: Formula
+    uniqueID: 1031039057
     locked: 0

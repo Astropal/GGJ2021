@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1082179965107300911}
   - component: {fileID: 7636184329770727337}
   - component: {fileID: 2714018631719888280}
+  - component: {fileID: 3014851404395962733}
   m_Layer: 8
   m_Name: Pot1
   m_TagString: LiquideGlace
@@ -123,8 +124,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000039556568}
-  m_Size: {x: 1.53, y: 2.0498245}
+  m_Offset: {x: 0.005777731, y: -0.25730783}
+  m_Size: {x: 1.564666, y: 1.6063906}
   m_Direction: 0
 --- !u!114 &2714018631719888280
 MonoBehaviour:
@@ -139,3 +140,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Violet
+--- !u!61 &3014851404395962733
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7935583594333332353}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.002888918, y: 0.78299516}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.74, y: 2.26}
+    newSize: {x: 1.53, y: 3.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7404561, y: 0.6940094}
+  m_EdgeRadius: 0
