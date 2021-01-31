@@ -24,9 +24,6 @@ public class DontDestroy : MonoBehaviour
         else if(edit.Length > 1){
             Destroy(gameObject);
         }
-        /*else if(planets.Length > 1){
-            Destroy(gameObject);
-        }*/
 
         DontDestroyOnLoad(gameObject);
     }

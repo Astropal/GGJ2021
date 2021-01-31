@@ -42,6 +42,5 @@ public class PNJ : MonoBehaviour
 
       SceneManager.LoadScene("MiniJeuGlaces");
     }
-
   }
 }
