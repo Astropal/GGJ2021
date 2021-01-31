@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DialogueManager : MonoBehaviour
    public Text npcNameText;
    public Text dialogueText;
 
+   public static bool MiniGameMaster;
    public Animator animator;
 
    public bool StrartMinigameGlace = false;
@@ -27,6 +29,8 @@ public class DialogueManager : MonoBehaviour
 
    public void StartDialogue(MenuDialog dialogue) {
        animator.SetBool("isOpen", true);
+       Debug.Log(dialogue);
+       Debug.Log(playerNameText.text);
        playerNameText.text = dialogue.PlayerName;
        npcNameText.text = dialogue.NPCName;
        sentences.Clear();
@@ -63,8 +67,8 @@ public class DialogueManager : MonoBehaviour
 
    void EndDialogue() {
        animator.SetBool("isOpen", false);
-       if(StrartMinigameGlace) {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+       if(MiniGameMaster) {
+            SceneManager.LoadScene("MiniJeuGlaces");
        }
    }
 }

@@ -9,6 +9,8 @@ public class PNJ : MonoBehaviour
   public string Name = "PNJ";
   public bool MiniGameMaster = false;
 
+  public MenuDialog dialogue;
+
   public MiniGame miniGame;
 
   // Start is called before the first frame update
@@ -32,16 +34,18 @@ public class PNJ : MonoBehaviour
   private void OnMouseDown()
   {
     if(GlobalState.instance.guiOpen || GlobalState.instance.glaceSolved) return;
+    DialogueManager.instance.StartDialogue(dialogue);
     if (MiniGameMaster)
     {
       gameObject.GetComponent<InteractiveObject>().ToggleHoverIndicator(false);
       Debug.Log("p: " + GameObject.FindWithTag("Player").transform.Find("Part").transform.position);
+      DialogueManager.MiniGameMaster = true;
+      DialogueManager.instance.StartDialogue(dialogue);
       GlobalState.instance.prevPlayerPos = GameObject.FindWithTag("Player").transform.Find("Part").transform.position;
       // Transform parent;
       // miniGame.GetComponent<MiniGame>().Show(true);
-
-      SceneManager.LoadScene("MiniJeuGlaces");
+    } else {
+            DialogueManager.MiniGameMaster = false;
     }
-
   }
 }
