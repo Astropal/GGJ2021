@@ -32,23 +32,24 @@ public class Planet : MonoBehaviour
     if(Solved != prevSolved && Solved) {
       Debug.Log("Prev pos backup " + GlobalState.instance.prevPlayerPos);
       GameObject.FindWithTag("Player").transform.Find("Part").transform.position = GlobalState.instance.prevPlayerPos;
-      //GameObject.FindWithTag("MainCamera").transform.position = new Vector3(GlobalState.instance.prevPlayerPos.x, GlobalState.instance.prevPlayerPos.y, -10);
+      // GameObject.FindWithTag("MainCamera").transform.position = new Vector3(GlobalState.instance.prevPlayerPos.x, GlobalState.instance.prevPlayerPos.y, -10);
       prevSolved = Solved;
     }
     if(GlobalState.instance.glaceSolved) {
       Solved = true;
-      setAlpha(0.2f);
+      // setAlpha(0.2f);
     }
 
     if(exited != prevExited && exited) {
       Debug.Log("Exited");
       Debug.Log("Prev pos backup " + GlobalState.instance.prevPlayerPos);
       GameObject.FindWithTag("Player").transform.Find("Part").transform.position = GlobalState.instance.prevPlayerPos;
+      // GameObject.FindWithTag("MainCamera").transform.position = new Vector3(GlobalState.instance.prevPlayerPos.x, GlobalState.instance.prevPlayerPos.y, -10);
       prevExited = exited;
     }
     if(GlobalState.instance.glaceExit) {
       exited = true;
-      setAlpha(0.2f);
+      // setAlpha(0.2f);
     }
   }
 

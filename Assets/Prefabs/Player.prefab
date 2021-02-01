@@ -82,6 +82,7 @@ MonoBehaviour:
   guiOpen: 0
   prevPlayerPos: {x: 0, y: 0, z: 0}
   glaceSolved: 0
+  glaceExit: 0
 --- !u!1 &3576639694369988470
 GameObject:
   m_ObjectHideFlags: 0

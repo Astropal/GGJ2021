@@ -15,12 +15,36 @@ public class DragTarget : MonoBehaviour
 	public GameObject Part;
 	public Player player;
 
+	public SpriteRenderer spriteRenderer;
+	public Sprite oldSprite;
+	public Sprite newSprite;
+	public Sprite newSprite2;
+	private int time = 100;
+
+	void Start() {
+
+	}
+
+	public bool isClick = false;
 	void Update ()
 	{
 		var worldPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
+		if(isClick) {
+							time--;
+					if(time > 50) {
+						spriteRenderer.sprite = newSprite;
+					} else {
+						spriteRenderer.sprite = newSprite2;
+					}
+					if(time <= 0) time = 100;
+		}
+
 		if (Input.GetMouseButtonDown (0))
 		{
+			isClick = true;
+
+
 			var collider = Physics2D.OverlapPoint (worldPos, m_DragLayers);
 			if (!collider)
 				return;
@@ -40,6 +64,8 @@ public class DragTarget : MonoBehaviour
 		}
 		else if (Input.GetMouseButtonUp (0))
 		{
+			spriteRenderer.sprite = oldSprite;
+			isClick = false;
 			Part.GetComponent<PolygonCollider2D>().enabled = true;
 			Destroy (m_TargetJoint);
 			m_TargetJoint = null;

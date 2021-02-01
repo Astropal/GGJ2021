@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GameMenu.unity
+    guid: ae15133f9d784474988e6089080a0ff6
+  - enabled: 1
     path: Assets/Scenes/Planets.unity
     guid: f9bb77f4eba197a41bd1148a43964a9b
   - enabled: 1
-    path: Assets/Scenes/MiniJeuLumiere.unity
-    guid: 556cdfa6c03c6304ebce0c7a5318612b
-  - enabled: 1
     path: Assets/Scenes/MiniJeuGlaces.unity
     guid: d86c762cba47554429c6dedb299eda35
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: 22b79f946a2d1ec478f434654db4181c
   m_configObjects: {}

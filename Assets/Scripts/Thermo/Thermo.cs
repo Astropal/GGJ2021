@@ -28,8 +28,7 @@ public class Thermo : MonoBehaviour
         GlobalState.instance.glaceExit = true;
 
         // Mini jeu gagné
-        SceneManager.LoadScene("Planets");
-
+        SceneManager.LoadScene("Fin");
 
     }
   }
