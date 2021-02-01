@@ -17,6 +17,7 @@ public class ConspiGame : MonoBehaviour
     public GameObject cadreDialogue;
 
     List<GameObject> listOfObject = new List<GameObject>(); 
+    public static bool isSuccessful;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +31,21 @@ public class ConspiGame : MonoBehaviour
             Debug.Log("Bag Full !");
             foreach (var item in listOfObject)
             {
-                    Debug.Log(item.tag);
+                    if(item.tag == "Camera"){
+                        isSuccessful = true;
+
+                    }
+                    else
+                    {
+                        
+                        isSuccessful = false;
+                    }
                     
             }
-            cadreDialogue.SetActive(true);
+
+            if(isSuccessful) Debug.Log("You could had take a picture :)");
+
+            SceneManager.LoadScene("Planets");
 
         }
 
